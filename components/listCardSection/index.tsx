@@ -1,5 +1,5 @@
-import SectionBody from "./sectionBody";
-import SectionTitle from "./sectionTitle";
+import SectionBody from "./bodySection";
+import SectionTitle from "./titleSection";
 
 interface Props {
   title?: string;
@@ -8,7 +8,7 @@ interface Props {
 
 export default function ListCardSection({ title, data }: Props) {
   return (
-    <div className="mt-6">
+    <div className="mt-6 max-lg:mt-0">
       <SectionTitle text={title} />
       <div className="mt-4">
         <SectionBody data={data} />

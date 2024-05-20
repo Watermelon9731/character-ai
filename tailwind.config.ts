@@ -28,6 +28,7 @@ const config = {
         "banner-card-w": "280px",
         "list-card-w": "312px",
         "list-card-h": "146px",
+        "category-title-h": "45px",
       },
       colors: {
         border: "hsl(var(--border))",
@@ -64,8 +65,8 @@ const config = {
           foreground: "hsl(var(--card-foreground))",
         },
         surface: {
-          DEFAULT: "var(--surface)"
-        }
+          DEFAULT: "var(--surface)",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

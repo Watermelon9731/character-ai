@@ -20,7 +20,7 @@ export default function BannerSection({ data }: Props) {
   }, [video]);
 
   return (
-    <div className="w-full min-w-banner-section-w h-featured-section-h rounded-bl-section rounded-tl-section overflow-hidden relative">
+    <div className="w-full min-w-banner-section-w h-featured-section-h rounded-bl-section rounded-tl-section overflow-hidden relative max-lg:hidden">
       <div className="w-3/4 h-full relative rounded-bl-section rounded-tl-section overflow-hidden border-none">
       {video && <BannerVideo data={video} />}
       </div>

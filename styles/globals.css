@@ -101,5 +101,9 @@
 }
 
 .listCardSwiper .swiper-slide {
-  width: 312px ;
+  width: 312px;
+}
+
+.listTitleSwiper .swiper-slide {
+  width: auto;
 }

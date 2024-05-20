@@ -1,4 +1,5 @@
 import BannerSection from "@/components/bannerSection";
+import CategorySection from "@/components/categorySection";
 import ListCardSection from "@/components/listCardSection";
 import { GetServerSideProps, InferGetServerSidePropsType } from "next";
 
@@ -9,10 +10,11 @@ interface Props {
 
 export default function Home({ banner, characterList }: Props) {
   return (
-    <main className="max-w-7xl md:max-w-6xl py-10 px-5 flex justify-center">
+    <main className="max-w-7xl md:max-w-6xl py-10 px-5 flex justify-center max-lg:pt-3">
       <div className="w-full overflow-hidden">
         <BannerSection data={banner} />
         <ListCardSection data={characterList} title="For you" />
+        <CategorySection />
       </div>
     </main>
   );
